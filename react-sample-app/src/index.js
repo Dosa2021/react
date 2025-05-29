@@ -18,20 +18,13 @@
 
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { App } from './App';
 
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
-const App = () => {
-  return (
-    <>
-      <h1>hoge</h1>
-      <p>hogehoge</p>
-    </>
-  )
-}
 
 root.render(
   <StrictMode>
-    <App />  
+    <App />
   </StrictMode>
 )
